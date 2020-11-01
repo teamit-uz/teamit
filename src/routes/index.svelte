@@ -1,11 +1,11 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const intro = await this.fetch(`intro.json`)
+    const intros = await this.fetch(`intro.json`)
       .then(r => r.json())
-      .then(intro => {
-        return { intro };
+      .then(intros => {
+        return { intros };
       });
-    return { intro };
+    return { intros };
   }
 </script>
 
@@ -24,7 +24,7 @@
     }
   });
 
-  export let intro;
+  export let intros;
 </script>
 
 <style>
@@ -382,33 +382,35 @@
 <section id="about" class="wow fadeInUp">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 about-img">
-        <img src={intro.image} alt="" />
-      </div>
+      {#each intros as intro}
+        <div class="col-lg-6 about-img">
+          <img src={intro.image} alt="" />
+        </div>
 
-      <div class="col-lg-6 content">
-        <h2>{intro.title}</h2>
-        <h3>{intro.list1}</h3>
-        <ul>
-          {#each intro.list1items as item}
-            <li>
-              <i class="ion-android-checkmark-circle" />
-              {item.item}
-            </li>
-          {/each}
+        <div class="col-lg-6 content">
+          <h2>{intro.title}</h2>
+          <h3>{intro.list1}</h3>
+          <ul>
+            {#each intro.list1items as item}
+              <li>
+                <i class="ion-android-checkmark-circle" />
+                {item.item}
+              </li>
+            {/each}
 
-        </ul>
-        <h3>{intro.list2}</h3>
-        <ul>
-          {#each intro.list2items as item}
-            <li>
-              <i class="ion-android-checkmark-circle" />
-              {item.item}
-            </li>
-          {/each}
-        </ul>
+          </ul>
+          <h3>{intro.list2}</h3>
+          <ul>
+            {#each intro.list2items as item}
+              <li>
+                <i class="ion-android-checkmark-circle" />
+                {item.item}
+              </li>
+            {/each}
+          </ul>
 
-      </div>
+        </div>
+      {/each}
     </div>
 
   </div>
