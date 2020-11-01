@@ -382,7 +382,7 @@
 <section id="about" class="wow fadeInUp">
   <div class="container">
     <div class="row">
-      {#each intros as intro}
+      {#each intros.intros as intro}
         <div class="col-lg-6 about-img">
           <img src={intro.image} alt="" />
         </div>
