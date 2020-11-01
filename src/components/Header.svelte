@@ -56,6 +56,7 @@
 --------------------------------------------------------------*/
 
 #header {
+  position: sticky;
   padding: 20px 0;
   height: 84px;
   transition: all 0.5s;

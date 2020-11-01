@@ -10,7 +10,12 @@
       .then(media => {
         return { media };
       });
-    return { media, intros };
+    const team = await this.fetch(`team.json`)
+      .then(r => r.json())
+      .then(team => {
+        return { team };
+      });
+    return { team, media, intros };
   }
 </script>
 
@@ -31,6 +36,7 @@
 
   export let intros;
   export let media;
+  export let team;
 </script>
 
 <style>
@@ -642,28 +648,29 @@
       <h2>Bizning jamoa</h2>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-1.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Sardor Isroilov</h4>
-            <span>Bosh ijrochi direktor</span>
-            <div class="social">
-              <a href="https://t.me/teamit_uz">
-                <i class="fa fa-telegram" />
-              </a>
-              <a href="https://www.facebook.com/sardor.isroilov1">
-                <i class="fa fa-facebook" />
-              </a>
-              <!-- <a href="."><i class="fa fa-google-plus"></i></a> -->
-              <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+      {#each team.team as item}
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src={item.image} alt="" />
+            </div>
+            <div class="details">
+              <h4>{item.name}</h4>
+              <span>{item.title}</span>
+              <div class="social">
+                <a href="https://t.me/teamit_uz">
+                  <i class="fa fa-telegram" />
+                </a>
+                <a href="https://www.facebook.com/sardor.isroilov1">
+                  <i class="fa fa-facebook" />
+                </a>
+                <!-- <a href="."><i class="fa fa-google-plus"></i></a> -->
+                <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
+      {/each}
       <div class="col-lg-3 col-md-6">
         <div class="member">
           <div class="pic">
