@@ -15,7 +15,12 @@
       .then(team => {
         return { team };
       });
-    return { team, media, intros };
+    const courses = await this.fetch(`courses.json`)
+      .then(r => r.json())
+      .then(courses => {
+        return { courses };
+      });
+    return { courses, team, media, intros };
   }
 </script>
 
@@ -37,6 +42,7 @@
   export let intros;
   export let media;
   export let team;
+  export let courses;
 </script>
 
 <style>
@@ -443,7 +449,19 @@
     </div>
 
     <div class="row">
-
+      {#each courses.courses as course}
+        <div class="col-lg-6">
+          <div class="box wow fadeInRight" data-wow-delay="0.2s">
+            <div class="icon">
+              <i class="fa fa-{course.icon}" />
+            </div>
+            <h4 class="title">
+              <a href=".">{course.title}</a>
+            </h4>
+            <p class="description">{course.text}</p>
+          </div>
+        </div>
+      {/each}
       <div class="col-lg-6">
         <div class="box wow fadeInLeft">
           <div class="icon">
@@ -671,150 +689,88 @@
           </div>
         </div>
       {/each}
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-2.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Azamatbek</h4>
-            <span>Katta dasturchi</span>
-            <div class="social">
-              <a href="https://t.me/azmtbek">
-                <i class="fa fa-telegram" />
-              </a>
-              <a href="https://www.facebook.com/azamatbek.mamarajabov">
-                <i class="fa fa-facebook" />
-              </a>
-              <!-- <a href="."><i class="fa fa-google-plus"></i></a>
-                  <a href="."><i class="fa fa-linkedin"></i></a> -->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-5.jpg" alt="" />
+            </div>
+            <div class="details">
+              <h4>Javohir Mahkamov</h4>
+              <span>Grafik dizayneri</span>
+              <div class="social">
+                <a href="https://t.me/JavohirMahkamov">
+                  <i class="fa fa-telegram" />
+                </a>
+                <a href="https://www.facebook.com/Javohirbek.de">
+                  <i class="fa fa-facebook" />
+                </a>
+                <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-3.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Javlon Ravshanov</h4>
-            <span>Grafik dizayneri</span>
-            <div class="social">
-              <a href="https://t.me/javlonravshanov">
-                <i class="fa fa-telegram" />
-              </a>
-              <a href="https://t.me/JR_portfolio">
-                <i class="fa fa-telegram" />
-              </a>
-              <!-- <a href="."><i class="fa fa-facebook"></i></a>
-                  <a href="."><i class="fa fa-linkedin"></i></a> -->
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-6.jpg" alt="" />
+            </div>
+            <div class="details">
+              <h4>Alimardon</h4>
+              <span>"Motion" dizayneri</span>
+              <div class="social">
+                <a href="https://t.me/Real_tr1">
+                  <i class="fa fa-telegram" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-4.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Farrux Abrorkulov</h4>
-            <span>SMM menejeri</span>
-            <div class="social">
-              <a href="https://t.me/bek_aliboyevich">
-                <i class="fa fa-telegram" />
-              </a>
-              <!-- <a href="."><i class="fa fa-facebook"></i></a> -->
-              <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-7.jpg" alt="" />
+            </div>
+            <div class="details">
+              <h4>Ahmadjon Zokirov</h4>
+              <span>IELTS o'qituvchisi</span>
+              <div class="social">
+                <a href="https://t.me/Online_royxat_english">
+                  <i class="fa fa-telegram" />
+                </a>
+                <a
+                  href="https://www.facebook.com/groups/443392879018332/user/100035723953921/">
+                  <i class="fa fa-facebook" />
+                </a>
+                <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-5.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Javohir Mahkamov</h4>
-            <span>Grafik dizayneri</span>
-            <div class="social">
-              <a href="https://t.me/JavohirMahkamov">
-                <i class="fa fa-telegram" />
-              </a>
-              <a href="https://www.facebook.com/Javohirbek.de">
-                <i class="fa fa-facebook" />
-              </a>
-              <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-8.jpg" alt="" />
+            </div>
+            <div class="details">
+              <h4>Jamshid Zokirov</h4>
+              <span>IELTS o'qituvchisi</span>
+              <div class="social">
+                <a href="https://t.me/Online_royxat_english">
+                  <i class="fa fa-telegram" />
+                </a>
+                <!-- <a href="."><i class="fa fa-facebook"></i></a> -->
+                <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-6.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Alimardon</h4>
-            <span>"Motion" dizayneri</span>
-            <div class="social">
-              <a href="https://t.me/Real_tr1">
-                <i class="fa fa-telegram" />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-7.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Ahmadjon Zokirov</h4>
-            <span>IELTS o'qituvchisi</span>
-            <div class="social">
-              <a href="https://t.me/Online_royxat_english">
-                <i class="fa fa-telegram" />
-              </a>
-              <a
-                href="https://www.facebook.com/groups/443392879018332/user/100035723953921/">
-                <i class="fa fa-facebook" />
-              </a>
-              <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="member">
-          <div class="pic">
-            <img src="img/team-8.jpg" alt="" />
-          </div>
-          <div class="details">
-            <h4>Jamshid Zokirov</h4>
-            <span>IELTS o'qituvchisi</span>
-            <div class="social">
-              <a href="https://t.me/Online_royxat_english">
-                <i class="fa fa-telegram" />
-              </a>
-              <!-- <a href="."><i class="fa fa-facebook"></i></a> -->
-              <!-- <a href="."><i class="fa fa-linkedin"></i></a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
