@@ -589,18 +589,18 @@
 
   <div class="container-fluid">
     <div class="row no-gutters">
-    {#each media.media as mitem}
-      <div class="col-lg-3 col-md-4">
-        <div class="portfolio-item wow fadeInUp">
-          <a href="{mitem.image}" class="portfolio-popup">
-            <img src="{mitem.image}" alt="" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info" />
-            </div>
-          </a>
+      {#each media.media as mitem}
+        <div class="col-lg-3 col-md-4">
+          <div class="portfolio-item wow fadeInUp">
+            <a href={mitem.image} class="portfolio-popup">
+              <img src={mitem.image} alt="" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info" />
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-
+      {/each}
 
     </div>
 
