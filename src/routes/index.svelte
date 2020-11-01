@@ -1,5 +1,16 @@
+<script context="module">
+  export async function preload({ params, query }) {
+    const intro = await this.fetch(`intro.json`)
+      .then(r => r.json())
+      .then(intro => {
+        return { intro };
+      });
+    return { intro };
+  }
+</script>
+
 <script>
- import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
   onMount(() => {
     if (window.netlifyIdentity) {
@@ -12,6 +23,8 @@
       });
     }
   });
+
+  export let intro;
 </script>
 
 <style>
@@ -354,67 +367,6 @@
   #contact .contact-email {
     margin-bottom: 20px;
   }
-  /* 
-#contact #google-map {
-  height: 290px;
-  margin-bottom: 20px;
-}
-
-#contact .form #sendmessage {
-  color: #50d8af;
-  border: 1px solid #50d8af;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #sendmessage.show,
-#contact .form #errormessage.show,
-#contact .form .show {
-  display: block;
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .form input,
-#contact .form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-}
-
-#contact .form button[type="submit"] {
-  background: #50d8af;
-  border: 0;
-  border-radius: 3px;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #2dc899;
-} */
 </style>
 
 <svelte:head>
@@ -431,37 +383,29 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 about-img">
-        <img src="img/about-img.jpg" alt="" />
+        <img src={intro.image} alt="" />
       </div>
 
       <div class="col-lg-6 content">
-        <h2>Teamit Academy'da siz quyidagilarga ega bo'lasiz:</h2>
-        <h3>O'quv kurslari davomida:</h3>
+        <h2>{intro.title}</h2>
+        <h3>{intro.list1}</h3>
         <ul>
-          <li>
-            <i class="ion-android-checkmark-circle" />
-            Kompyuterlar bilan jihozlangan, qulay va shinam o'quv xonalari
-          </li>
-          <li>
-            <i class="ion-android-checkmark-circle" />
-            Zamonaviy metodlarga asoslangan yuqori sifatli ta'lim
-          </li>
-          <li>
-            <i class="ion-android-checkmark-circle" />
-            Soha mutaxasislarining yopiq seminar va vebinarlarida qatnashish
-            imkoniyati
-          </li>
+          {#each intro.list1items as item}
+            <li>
+              <i class="ion-android-checkmark-circle" />
+              {item.item}
+            </li>
+          {/each}
+
         </ul>
-        <h3>O'quv kurslari yakunida:</h3>
+        <h3>{intro.list2}</h3>
         <ul>
-          <li>
-            <i class="ion-android-checkmark-circle" />
-            IT dunyosining eng dolzarb mutaxassisliklaridan biriga
-          </li>
-          <li>
-            <i class="ion-android-checkmark-circle" />
-            Amaliyot yoki turli kompaniyalarda ish topishda ko'mak
-          </li>
+          {#each intro.list2items as item}
+            <li>
+              <i class="ion-android-checkmark-circle" />
+              {item.item}
+            </li>
+          {/each}
         </ul>
 
       </div>
