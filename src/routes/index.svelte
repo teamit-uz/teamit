@@ -5,7 +5,12 @@
       .then(intros => {
         return { intros };
       });
-    return { intros };
+    const media = await this.fetch(`media.json`)
+      .then(r => r.json())
+      .then(media => {
+        return { media };
+      });
+    return { media, intros };
   }
 </script>
 
@@ -25,6 +30,7 @@
   });
 
   export let intros;
+  export let media;
 </script>
 
 <style>
@@ -583,11 +589,11 @@
 
   <div class="container-fluid">
     <div class="row no-gutters">
-
+    {#each media.media as mitem}
       <div class="col-lg-3 col-md-4">
         <div class="portfolio-item wow fadeInUp">
-          <a href="img/portfolio/1.jpg" class="portfolio-popup">
-            <img src="img/portfolio/1.jpg" alt="" />
+          <a href="{mitem.image}" class="portfolio-popup">
+            <img src="{mitem.image}" alt="" />
             <div class="portfolio-overlay">
               <div class="portfolio-info" />
             </div>
@@ -595,38 +601,6 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4">
-        <div class="portfolio-item wow fadeInUp">
-          <a href="img/portfolio/2.jpg" class="portfolio-popup">
-            <img src="img/portfolio/2.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info" />
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="portfolio-item wow fadeInUp">
-          <a href="img/portfolio/3.jpg" class="portfolio-popup">
-            <img src="img/portfolio/3.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info" />
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="portfolio-item wow fadeInUp">
-          <a href="img/portfolio/4.jpg" class="portfolio-popup">
-            <img src="img/portfolio/4.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info" />
-            </div>
-          </a>
-        </div>
-      </div>
 
     </div>
 
