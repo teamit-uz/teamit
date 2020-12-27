@@ -1,0 +1,23 @@
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.listItem {
+  width: 400px;
+  max-width: 100%;
+}
+
+.listItem img {
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team img {
+  max-width: 80%;
+  width: 1400px;
+}
