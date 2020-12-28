@@ -1,9 +1,9 @@
-import styles from "../../styles/components/About.module.css"
-
+import styles from "../styles/components/About.module.css"
+import Button from "./Button"
 const About = () => {
   return (
-    <div className={styles.about}>
-      <div className={styles.title}>
+    <div className={styles.about} id="about">
+      <div className="title">
         Teamit Academyda siz quyidagilarga ega bo'lasiz:
       </div>
       <div className={styles.aboutList}>
@@ -35,6 +35,7 @@ const About = () => {
           <span>Amaliyot yoki turli kompaniyalarda ish topishga ko'mak</span>
         </div>{" "}
       </div>
+      <Button link="courses" text="Batafsil" />
     </div>
   )
 }

@@ -3,12 +3,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  max-height: 100%;
+  margin: 0;
 }
 
 .aboutList {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .listItem {
@@ -17,4 +22,8 @@
   align-items: center;
   flex-direction: column;
   margin: 0 10px;
+  max-width: 280px;
+  gap: 20px;
+  font-size: 0.8rem;
+  text-align: center;
 }

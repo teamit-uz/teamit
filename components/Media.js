@@ -1,4 +1,5 @@
-import styles from "../../styles/components/Media.module.css"
+import styles from "../styles/components/Media.module.css"
+import Button from "./Button"
 const Media = () => {
   return (
     <div className={styles.media}>
@@ -22,7 +23,8 @@ const Media = () => {
         <div className={styles.listItem}>
           <img src="IMG_9410.JPG" alt="" />
         </div>
-      </div>
+      </div>{" "}
+      <Button link="courses" text="Batafsil" />
     </div>
   )
 }

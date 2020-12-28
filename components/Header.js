@@ -1,4 +1,4 @@
-import styles from "../../styles/components/Header.module.css"
+import styles from "../styles/components/Header.module.css"
 import Link from "next/link"
 const Header = () => {
   return (
@@ -8,10 +8,10 @@ const Header = () => {
       </div>
       <div className={styles.links}>
         <HeaderLink name="Asosiy" link="/" />
-        <HeaderLink name="Kurslar" link="/kurslar" />
+        <HeaderLink name="Kurslar" link="/courses" />
         <HeaderLink name="Media" link="/media" />
-        <HeaderLink name="Jamoa" link="/jamoa" />
-        <HeaderLink name="Aloqa" link="/aloqa" />
+        <HeaderLink name="Jamoa" link="/team" />
+        <HeaderLink name="Aloqa" link="/#contact" />
       </div>
       <div className={styles.i18n}> Uzb </div>
     </header>
