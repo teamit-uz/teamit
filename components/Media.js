@@ -2,7 +2,7 @@ import styles from "../styles/components/Media.module.css"
 import Button from "./Button"
 const Media = () => {
   return (
-    <div className={styles.media}>
+    <div className={styles.media} id="media">
       <div className="title">Media</div>
       <div className={styles.list}>
         <div className={styles.listItem}>
