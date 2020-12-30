@@ -12,6 +12,8 @@ const Courses = () => {
             <div className={styles.listItem_title}>Web dasturlash</div>
             <div className={styles.listItem_tags}>
               <span>JavaScript</span>
+              <span>React</span> <span>JavaScript</span>
+              <span>React</span> <span>JavaScript</span>
               <span>React</span>
             </div>
           </a>
@@ -27,37 +29,49 @@ const Courses = () => {
           </a>
         </div>{" "}
         <div className={styles.listItem}>
-          <img src="/courses.jpg" alt="" />{" "}
-          <div className={styles.listItem_title}>Web dasturlash</div>
-          <div className={styles.listItem_tags}>
-            <span>JavaScript</span>
-            <span>React</span>
-          </div>
+          <a href="/courses/1">
+            <img src="/courses.jpg" alt="" />{" "}
+            <div className={styles.listItem_title}>Web dasturlash</div>
+            <div className={styles.listItem_tags}>
+              <span>JavaScript</span>
+              <span>React</span> <span>JavaScript</span>
+              <span>React</span> <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </a>
         </div>{" "}
         <div className={styles.listItem}>
-          <img src="/courses.jpg" alt="" />{" "}
-          <div className={styles.listItem_title}>Web dasturlash</div>
-          <div className={styles.listItem_tags}>
-            <span>JavaScript</span>
-            <span>React</span>
-          </div>
+          <a href="/courses/2">
+            <img src="/courses.jpg" alt="" />{" "}
+            <div className={styles.listItem_title}>Web dasturlash</div>
+            <div className={styles.listItem_tags}>
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </a>
         </div>{" "}
         <div className={styles.listItem}>
-          <img src="/courses.jpg" alt="" />{" "}
-          <div className={styles.listItem_title}>Web dasturlash</div>
-          <div className={styles.listItem_tags}>
-            <span>JavaScript</span>
-            <span>React</span>
-          </div>
+          <a href="/courses/1">
+            <img src="/courses.jpg" alt="" />{" "}
+            <div className={styles.listItem_title}>Web dasturlash</div>
+            <div className={styles.listItem_tags}>
+              <span>JavaScript</span>
+              <span>React</span> <span>JavaScript</span>
+              <span>React</span> <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </a>
         </div>{" "}
         <div className={styles.listItem}>
-          <img src="/courses.jpg" alt="" />{" "}
-          <div className={styles.listItem_title}>Web dasturlash</div>
-          <div className={styles.listItem_tags}>
-            <span>JavaScript</span>
-            <span>React</span>
-          </div>
-        </div>
+          <a href="/courses/2">
+            <img src="/courses.jpg" alt="" />{" "}
+            <div className={styles.listItem_title}>Web dasturlash</div>
+            <div className={styles.listItem_tags}>
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </a>
+        </div>{" "}
       </div>{" "}
       <Button link="courses" text="Batafsil" />
     </div>
