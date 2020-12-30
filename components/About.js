@@ -3,6 +3,7 @@ import Button from "./Button"
 const About = () => {
   return (
     <div className={styles.about} id="about">
+      <div className={styles.aboutBG}></div>
       <div className="title">
         Teamit Academyda siz quyidagilarga ega bo'lasiz:
       </div>

@@ -40,13 +40,17 @@ const Header = () => {
       ) : (
         <header className={styles.header}>
           <div className={styles.logo}>
-            <img src="/teamitlogo_blue.png" alt="" />
+            <Link href="/">
+              <a>
+                <img src="/teamitlogo_blue.png" alt="" />
+              </a>
+            </Link>
           </div>
           <div className={styles.links}>
             <HeaderLink name="Asosiy" link="/" />
-            <HeaderLink name="Kurslar" link="/courses" />
-            <HeaderLink name="Media" link="/media" />
-            <HeaderLink name="Jamoa" link="/team" />
+            <HeaderLink name="Kurslar" link="/#courses" />
+            <HeaderLink name="Media" link="/#media" />
+            <HeaderLink name="Jamoa" link="/#team" />
             <HeaderLink name="Aloqa" link="/#contact" />
           </div>
           <div className={styles.i18n}> Uzb </div>

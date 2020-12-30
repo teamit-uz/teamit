@@ -19,38 +19,21 @@ const Footer = () => {
             <img src="/location.svg" alt="" />
             Jizzax sh. Maishiy xizmat uyi, "Zokir ota" to'yxonasi.
           </div>
-        </div>{" "}
-        <div className={styles.list}>
-          <div className={styles.list_title}>Ijtimoiy tarmoqlarimiz</div>
-          <div className={styles.list_item}>
-            {" "}
+          <div className={styles.list_item_sm}>
             <a href="https://t.me/teamit_uz" target="_blank">
               <img src="/about7.svg" alt="" />
-              Telegram
             </a>
-          </div>
-          <div className={styles.list_item}>
-            {" "}
             <a href="https://t.me/teamit_uz" target="_blank">
               <img src="/about6.svg" alt="" />
-              Facebook
-            </a>
-          </div>
-          <div className={styles.list_item}>
-            {" "}
+            </a>{" "}
             <a href="https://t.me/teamit_uz" target="_blank">
               <img src="/about8.svg" alt="" />
-              Instagram
-            </a>
-          </div>
-          <div className={styles.list_item}>
-            {" "}
+            </a>{" "}
             <a href="https://t.me/teamit_uz" target="_blank">
               <img src="/about9.svg" alt="" />
-              Youtube
             </a>
           </div>
-        </div>
+        </div>{" "}
         <div className={styles.list}>
           <div className={styles.list_title}>Sayt Xaritasi</div>
           <div className={styles.list_item}>
