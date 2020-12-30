@@ -5,7 +5,7 @@ const Main = () => {
     <div className={styles.main}>
       <div className={styles.mainTitle}>
         <div>Zamonaviy kasblarni biz bilan o'rganing!</div>{" "}
-        <Button link="#about" text="Olg'a" />
+        <Button link="#about" text="Kurslarga yoziling" />
       </div>
       <div className={styles.mainImage}>
         <img src="/main.svg" alt="" />

@@ -6,23 +6,40 @@ const Media = () => {
       <div className="title">Media</div>
       <div className={styles.list}>
         <div className={styles.listItem}>
-          <img src="IMG_9410.JPG" alt="" />
+          <div>
+            <img src="IMG_9410.JPG" alt="" />
+          </div>
         </div>
         <div className={styles.listItem}>
-          <img src="IMG_9410.JPG" alt="" />
-        </div>
+          <div>
+            {" "}
+            <img src="IMG_9410.JPG" alt="" />
+          </div>
+        </div>{" "}
         <div className={styles.listItem}>
-          <img src="IMG_9410.JPG" alt="" />
-        </div>
+          <div>
+            {" "}
+            <img src="IMG_9410.JPG" alt="" />
+          </div>
+        </div>{" "}
         <div className={styles.listItem}>
-          <img src="IMG_9410.JPG" alt="" />
-        </div>
+          <div>
+            {" "}
+            <img src="IMG_9410.JPG" alt="" />
+          </div>
+        </div>{" "}
         <div className={styles.listItem}>
-          <img src="IMG_9410.JPG" alt="" />
-        </div>
+          <div>
+            {" "}
+            <img src="IMG_9410.JPG" alt="" />
+          </div>
+        </div>{" "}
         <div className={styles.listItem}>
-          <img src="IMG_9410.JPG" alt="" />
-        </div>
+          <div>
+            {" "}
+            <img src="IMG_9410.JPG" alt="" />
+          </div>
+        </div>{" "}
       </div>{" "}
       <Button link="courses" text="Batafsil" />
     </div>

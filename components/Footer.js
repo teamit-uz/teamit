@@ -35,7 +35,8 @@ const Footer = () => {
           </div>
         </div>{" "}
         <div className={styles.list}>
-          <div className={styles.list_title}>Sayt Xaritasi</div>
+          <div className={styles.list_title}></div>
+          <div className={styles.list_title}></div>
           <div className={styles.list_item}>
             {" "}
             <a href="/#about">Biz haqimizda</a>

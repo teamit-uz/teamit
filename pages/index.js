@@ -6,13 +6,15 @@ import About from "../components/About"
 import Courses from "../components/Courses"
 import Team from "../components/Team"
 import Media from "../components/Media"
+import Snow from "../components/Snowy"
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Teamit</title>
-        <link rel="icon" href="/teamit.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Snow style="snow" />
       <Layout>
         <Main />
         <About />

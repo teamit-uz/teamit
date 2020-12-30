@@ -5,6 +5,7 @@
   flex-direction: column;
   width: 100vw;
   max-width: 100%;
+  z-index: 1;
   /* gap: 20px; */
 }
 
@@ -16,9 +17,9 @@
   width: 100vw;
   max-width: 100%;
   position: relative;
-  padding: 20px 7%;
+  padding: 45px 7% 20px;
   flex-wrap: wrap;
-  background-color: var(--c-lighblue);
+  background-color: var(--c-lightgrey);
 }
 
 .list > img {

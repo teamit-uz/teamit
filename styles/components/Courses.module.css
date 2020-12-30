@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .list {
@@ -45,7 +46,8 @@
 
 .listItem_title {
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: bold;
+  padding: 5px;
 }
 .listItem_tags {
   font-size: 0.8rem;
