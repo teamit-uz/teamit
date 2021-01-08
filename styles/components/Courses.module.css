@@ -16,7 +16,7 @@
 }
 
 .listItem {
-  width: 400px;
+  width: clamp(300px, 80vw, 500px);
   max-width: 100%;
   border-radius: 20px;
   padding: 10px;

@@ -27,7 +27,7 @@ body {
   scrollbar-width: auto;
 
   scroll-behavior: smooth;
-  background-color: #336;
+  /* background-color: #336; */
 }
 body::-webkit-scrollbar {
   width: 0.5em;
