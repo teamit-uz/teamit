@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import Layout from "../../components/Layout"
+import styles from "../../styles/components/Team.module.css"
 const teams = ["a", "b", "c"]
 
 const Team = () => {
