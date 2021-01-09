@@ -73,7 +73,6 @@ const Courses = () => {
           </a>
         </div>{" "}
       </div>{" "}
-      <Button link="courses" text="Batafsil" />
     </div>
   )
 }

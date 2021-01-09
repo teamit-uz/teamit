@@ -35,14 +35,21 @@ const Header = () => {
     <>
       {isBreakpoint ? (
         <div>
+          <div className={styles.logoSm}>
+            <Link href="/">
+              <a onClick={() => setOpen(!open)}>
+                <img src="/teamitlogo_blue.png" alt="" />
+              </a>
+            </Link>
+          </div>
           <div className={styles.headerSm} onClick={() => setOpen(!open)}>
             {open ? (
-              <img src="/menu.svg" alt="" />
-            ) : (
               <img src="/close.svg" alt="" />
+            ) : (
+              <img src="/menu.svg" alt="" />
             )}
           </div>
-          {open || (
+          {open && (
             <div className={styles.headerSmMenu}>
               <HeaderLinkSm
                 name="Asosiy"

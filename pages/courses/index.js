@@ -1,9 +1,9 @@
 import Layout from "../../components/Layout"
-import Courses from "../../components/Courses"
+import CoursesLayout from "../../components/CoursesLayout"
 const Course = () => {
   return (
     <Layout>
-      <Courses />
+      <CoursesLayout />
     </Layout>
   )
 }

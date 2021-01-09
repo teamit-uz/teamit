@@ -6,7 +6,7 @@ const Team = () => {
       <div className="title">Biz Teamit Jamoasi!</div>
       {/* <div className={styles.team_text}>Teamit Jamoasi </div> */}
       <img src="/IMG_9380.JPG" alt="" />
-      <Button link="courses" text="Batafsil" />
+      <Button link="team" text="Batafsil" />
     </div>
   )
 }
