@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Product";
+  src: url("Product Sans Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Product";
+  src: url("Product Sans Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Product";
+  src: url("Product Sans Italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+/* @font-face {
+  font-family: "Product";
+  src: url("Product Sans Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+} */

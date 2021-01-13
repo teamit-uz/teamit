@@ -85,7 +85,7 @@ const Header = () => {
           )}
         </div>
       ) : (
-        <header className={styles.header}>
+        <header className={`${styles.header} myPad`}>
           <div className={styles.logo}>
             <Link href="/">
               <a>

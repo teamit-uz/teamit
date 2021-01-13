@@ -28,7 +28,7 @@ const Snowy = ({ style }) => {
             events: {
               onClick: {
                 enable: true,
-                mode: "pause",
+                mode: "bubble",
               },
               onHover: {
                 enable: true,

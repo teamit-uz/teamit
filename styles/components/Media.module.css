@@ -5,33 +5,31 @@
   flex-direction: column;
   min-height: 100vh;
   z-index: 1;
+  width: 100vw;
+  max-width: 100%;
 }
 
 .list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  width: 100vw;
+  max-width: 100%;
 }
 .listItem {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.listItem div {
-  position: relative;
-  width: clamp(300px, 20vw, 400px);
-  height: clamp(300px, 20vh, 400px);
+  width: clamp(300px, 22vw, 500px);
+  height: clamp(300px, 20vh, 500px);
 }
 
 .listItem img {
-  position: absolute;
-  width: clamp(300px, 20vw, 400px);
-  height: clamp(300px, 20vh, 400px);
-  transition: all 1.5s ease-in-out;
+  width: clamp(300px, 22vw, 500px);
+  height: clamp(300px, 20vh, 500px);
+  transition: all 0.8s ease-in-out;
   object-fit: cover;
   border-radius: 20px;
   top: 0;
@@ -48,27 +46,8 @@
   }
   .listItem img:hover {
     border-radius: 7px;
-    transform: scale(2);
+    transform: scale(1.1);
     box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.07);
     z-index: 2;
-  }
-
-  .listItem:first-child img:hover {
-    transform-origin: top left;
-  }
-  .listItem:nth-child(2) img:hover {
-    transform-origin: top;
-  }
-  .listItem:nth-child(3) img:hover {
-    transform-origin: top right;
-  }
-  .listItem:nth-child(4) img:hover {
-    transform-origin: bottom left;
-  }
-  .listItem:nth-child(5) img:hover {
-    transform-origin: bottom;
-  }
-  .listItem:nth-child(6) img:hover {
-    transform-origin: bottom right;
   }
 }

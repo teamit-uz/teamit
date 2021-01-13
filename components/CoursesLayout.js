@@ -3,7 +3,7 @@ import Button from "./Button"
 
 const Courses = () => {
   return (
-    <div className={styles.courses} id="courses">
+    <div className={`${styles.courses} myPad`} id="courses">
       <div className="title">Kurslarimiz</div>
       <div className={styles.list}>
         <div className={styles.listItem}>
