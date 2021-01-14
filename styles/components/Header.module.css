@@ -9,7 +9,7 @@
   z-index: 6;
   position: fixed;
   height: 60px;
-  background-color: #fff;
+  background-color: var(--c-white);
   color: var(--c-dark-gray);
 }
 

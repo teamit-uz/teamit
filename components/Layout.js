@@ -1,12 +1,12 @@
 import Header from "./Header"
 import Footer from "./Footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, dark, setDark }) => {
   return (
     <>
-      <Header></Header>
+      <Header dark={dark} setDark={setDark}></Header>
       <div className="layoutMain">{children}</div>
-      <Footer></Footer>
+      <Footer dark={dark}></Footer>
     </>
   )
 }

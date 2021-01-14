@@ -23,14 +23,15 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-
   width: 100vw;
   max-width: 100%;
+
+  z-index: 1;
 }
 
 .list a,
 .listItem {
-  width: 200px;
+  width: max-content;
   height: 200px;
   max-width: 100%;
   border-radius: 50%;
@@ -41,7 +42,7 @@
   justify-content: center;
   flex-direction: column;
   transition: all 0.7s ease-in-out;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .listItem img {
@@ -60,6 +61,7 @@
 .listItem_title {
   font-size: 0.8rem;
   padding: 5px;
+  color: var(--c-black);
 }
 
 .slug {

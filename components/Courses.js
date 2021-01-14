@@ -8,29 +8,37 @@ const Courses = () => {
       <div className={styles.list}>
         <div className={styles.listItem}>
           <a href="/courses/1">
-            <img src="/courses.jpg" alt="" />{" "}
-            <div className={styles.listItem_title}>Web dasturlash</div>
+            <img src="/courses.jpg" alt="" />
+            <div className={styles.listItem_title}>Web Frontend</div>
             <div className={styles.listItem_tags}>
-              <span>JavaScript</span>
-              <span>React</span> <span>JavaScript</span>
-              <span>React</span> <span>JavaScript</span>
+              <span>Javascript</span>
               <span>React</span>
+              <span>SASS</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
+        <div className={styles.listItem}>
+          <a href="/courses/1">
+            <img src="/courses.jpg" alt="" />
+            <div className={styles.listItem_title}>Web Backend</div>
+            <div className={styles.listItem_tags}>
+              <span>Python</span> <span>Django</span>
+            </div>
+          </a>
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/2">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>Video Montaj</div>
             <div className={styles.listItem_tags}>
               <span>After Effects</span>
               <span>PremierPro</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/1">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>SMM va Kopirayting</div>
             <div className={styles.listItem_tags}>
               <span>Facebook</span> <span>Youtube</span>
@@ -38,10 +46,10 @@ const Courses = () => {
               <span>TikTok</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/2">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>Office Dasturlari</div>
             <div className={styles.listItem_tags}>
               <span>MS Word</span>
@@ -49,10 +57,10 @@ const Courses = () => {
               <span>MS PowerPoint</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/1">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>Ingliz tili</div>
             <div className={styles.listItem_tags}>
               <span>IELTS</span>
@@ -61,20 +69,20 @@ const Courses = () => {
               <span>Beginner</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/2">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>Grafik Dizayni</div>
             <div className={styles.listItem_tags}>
               <span>Adobe Illustrator</span>
               <span>Photoshop</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/2">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>Arxitektura</div>
             <div className={styles.listItem_tags}>
               <span>AutoCAD</span>
@@ -82,19 +90,18 @@ const Courses = () => {
               <span>3D</span>
             </div>
           </a>
-        </div>{" "}
+        </div>
         <div className={styles.listItem}>
           <a href="/courses/2">
-            <img src="/courses.jpg" alt="" />{" "}
+            <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>Grafik Dizayni</div>
             <div className={styles.listItem_tags}>
               <span>Adobe Illustrator</span>
               <span>Photoshop</span>
             </div>
           </a>
-        </div>{" "}
-        <div className={styles.listItem}></div>
-      </div>{" "}
+        </div>
+      </div>
       <Button link="courses" text="Batafsil" />
     </div>
   )

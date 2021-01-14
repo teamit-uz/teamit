@@ -1,10 +1,15 @@
 import styles from "../styles/components/Footer.module.css"
-const Footer = () => {
+import Button from "./Button"
+const Footer = ({ dark }) => {
   return (
     <div className={styles.footer} id="contact">
       <div className={styles.footerMain}>
         <div className={styles.list}>
-          <img src="/teamitlogo_blue.png" alt="" />
+          {!dark ? (
+            <img src="/teamitlogo_blue.png" alt="" />
+          ) : (
+            <img src="/teamitlogo.png" alt="" />
+          )}
         </div>
         <div className={styles.list}>
           <div className={styles.list_title}>Aloqa</div>
@@ -21,7 +26,6 @@ const Footer = () => {
         </div>
         <div className={styles.list}>
           <div className={styles.list_title}></div>
-          <div className={styles.list_title}></div>
           <div className={styles.list_item}>
             <a href="/#about">Biz haqimizda</a>
           </div>
@@ -35,7 +39,17 @@ const Footer = () => {
             <a href="/#team">Jamoa</a>
           </div>
         </div>
-        <div className={styles.list}></div>
+        <div className={styles.list}>
+          <div className={styles.list_title}></div>
+          <div className={styles.list_item}>
+            <a href="/#contact">Vakansiya</a>
+          </div>
+          <Button
+            link="https://forms.gle/Y2MjSG9By8sxwd4WA"
+            target={"_blank"}
+            text="Kurslarga yoziling"
+          />
+        </div>
       </div>
       <div className={styles.copyright}>
         <div className={styles.copyrightText}>

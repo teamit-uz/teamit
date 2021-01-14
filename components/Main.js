@@ -5,7 +5,11 @@ const Main = () => {
     <div className={`${styles.main} myPad`}>
       <div className={styles.mainTitle}>
         <div>Zamonaviy kasblarni biz bilan o'rganing!</div>{" "}
-        <Button link="#about" text="Kurslarga yoziling" />
+        <Button
+          link="https://forms.gle/Y2MjSG9By8sxwd4WA"
+          target={"_blank"}
+          text="Kurslarga yoziling"
+        />
       </div>
       <div className={styles.mainImage}>
         <img src="/main.svg" alt="" />

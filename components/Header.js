@@ -1,6 +1,7 @@
 import styles from "../styles/components/Header.module.css"
 import Link from "next/link"
 import { useState, useCallback, useEffect } from "react"
+import ThemeToggle from "./ThemeToggle"
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false)
@@ -28,7 +29,7 @@ const useMediaQuery = (width) => {
   return targetReached
 }
 
-const Header = () => {
+const Header = ({ dark, setDark }) => {
   const isBreakpoint = useMediaQuery(768)
   const [open, setOpen] = useState(false)
   return (
@@ -38,7 +39,11 @@ const Header = () => {
           <div className={styles.logoSm}>
             <Link href="/">
               <a onClick={() => setOpen(!open)}>
-                <img src="/teamitlogo_blue.png" alt="" />
+                {!dark ? (
+                  <img src="/teamitlogo_blue.png" alt="" />
+                ) : (
+                  <img src="/teamitlogo.png" alt="" />
+                )}
               </a>
             </Link>
           </div>
@@ -51,6 +56,10 @@ const Header = () => {
           </div>
           {open && (
             <div className={styles.headerSmMenu}>
+              <div>
+                <ThemeToggle dark={dark} setDark={setDark} />
+              </div>
+
               <HeaderLinkSm
                 name="Asosiy"
                 link="/"
@@ -89,7 +98,11 @@ const Header = () => {
           <div className={styles.logo}>
             <Link href="/">
               <a>
-                <img src="/teamitlogo_blue.png" alt="" />
+                {!dark ? (
+                  <img src="/teamitlogo_blue.png" alt="" />
+                ) : (
+                  <img src="/teamitlogo.png" alt="" />
+                )}
               </a>
             </Link>
           </div>
@@ -100,7 +113,9 @@ const Header = () => {
             <HeaderLink name="Jamoa" link="/#team" />
             <HeaderLink name="Aloqa" link="/#contact" />
           </div>
-          <div className={styles.i18n}> Uzb </div>
+          <div className={styles.i18n}>
+            <ThemeToggle dark={dark} setDark={setDark} />
+          </div>
         </header>
       )}
     </>

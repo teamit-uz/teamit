@@ -1,10 +1,42 @@
 import Layout from "../../components/Layout"
 import CoursesLayout from "../../components/CoursesLayout"
+
+import { useState, useEffect } from "react"
+import Snow from "../../components/Snowy"
+import SnowDark from "../../components/SnowyDark"
+import Head from "next/head"
 const Course = () => {
+  let theme
+  if (typeof window !== "undefined") {
+    theme = localStorage.getItem("theme")
+  }
+  const [dark, setDark] = useState(theme)
+  const toggler = async () => {
+    if (!dark) {
+      window.document.body.classList.add("dark")
+      window.document.body.classList.remove("light")
+    } else {
+      window.document.body.classList.add("light")
+      window.document.body.classList.remove("dark")
+    }
+
+    localStorage.setItem("theme", dark)
+  }
+
+  useEffect(() => {
+    toggler()
+  }, [dark])
   return (
-    <Layout>
-      <CoursesLayout />
-    </Layout>
+    <>
+      <Head>
+        <title>Teamit Academy</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {!dark ? <Snow style="snow" /> : <SnowDark style="snow" />}
+      <Layout dark={dark} setDark={setDark}>
+        <CoursesLayout />
+      </Layout>
+    </>
   )
 }
 
