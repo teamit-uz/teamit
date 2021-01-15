@@ -11,7 +11,7 @@ const TeamLayout = () => {
       <div className={`${styles.list} myPad`}>
         <div className={styles.listItem}>
           <img src="/team/SarvarIsroilov.jpg" alt="" />
-          <div className={styles.listItem_name}>Sarvar Isroilov</div>
+          <div className={styles.listItem_name}>Sardor Isroilov</div>
           <div className={styles.listItem_title}>Bosh direktor</div>
         </div>
         <div className={styles.listItem}>

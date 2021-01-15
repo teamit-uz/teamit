@@ -40,7 +40,6 @@ const Header = ({ dark, setDark }) => {
           <div className={styles.logoSm}>
             <Link href="/">
               <a onClick={() => setOpen(!open)}>
-                {dark}
                 {dark === false ? (
                   <img src="/teamitlogo.png" alt="" />
                 ) : (
