@@ -152,9 +152,8 @@ a {
   padding: 0 15%;
 }
 
-@media (max-width: var(--tablet)) {
+@media (max-width: 639px) {
   .myPad {
-    /* padding: 10px; */
     padding: 0;
   }
 }

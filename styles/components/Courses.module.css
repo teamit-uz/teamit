@@ -7,6 +7,7 @@
   z-index: 1;
   margin: 40px 0;
   max-width: 100%;
+  margin-top: 80px;
 }
 
 .list {
@@ -15,6 +16,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+}
+@media (max-width: 850px) {
+  .list {
+    justify-content: center;
+  }
 }
 
 .listItem {
@@ -38,6 +44,15 @@
   /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); */
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.07);
   background-color: var(--c-white);
+}
+.listItem:last-child {
+  border: none;
+  box-shadow: none;
+  background-color: none;
+}
+.listItem:last-child:hover {
+  box-shadow: none;
+  background-color: none;
 }
 
 .listItem img {

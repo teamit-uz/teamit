@@ -18,11 +18,14 @@
 }
 
 .list {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-items: center;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  gap: clamp(20px, 10vw, 100px) 30px;
   width: 100vw;
   max-width: 100%;
 
@@ -31,14 +34,17 @@
 
 .list a,
 .listItem {
+  justify-self: center;
   width: max-content;
-  height: 200px;
   max-width: 100%;
   border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
   display: flex;
   align-items: center;
+  /* align-self: center; */
+
+  place-self: center;
   justify-content: center;
   flex-direction: column;
   transition: all 0.7s ease-in-out;
@@ -47,8 +53,8 @@
 
 .listItem img {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
+  /* height: 200px; */
+  /* object-fit: cover; */
   border-radius: 50%;
 }
 

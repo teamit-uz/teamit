@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 80px;
   min-height: 100vh;
   z-index: 1;
   width: 100vw;
@@ -14,9 +15,15 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
   width: 100vw;
   max-width: 100%;
+}
+
+@media (max-width: 850px) {
+  .list {
+    justify-content: center;
+  }
 }
 .listItem {
   display: flex;

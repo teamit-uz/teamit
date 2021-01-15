@@ -30,6 +30,7 @@ const useMediaQuery = (width) => {
 }
 
 const Header = ({ dark, setDark }) => {
+  console.log("dark2", dark)
   const isBreakpoint = useMediaQuery(768)
   const [open, setOpen] = useState(false)
   return (
@@ -39,10 +40,11 @@ const Header = ({ dark, setDark }) => {
           <div className={styles.logoSm}>
             <Link href="/">
               <a onClick={() => setOpen(!open)}>
-                {!dark ? (
-                  <img src="/teamitlogo_blue.png" alt="" />
-                ) : (
+                {dark}
+                {dark === false ? (
                   <img src="/teamitlogo.png" alt="" />
+                ) : (
+                  <img src="/teamitlogo_blue.png" alt="" />
                 )}
               </a>
             </Link>
@@ -98,10 +100,10 @@ const Header = ({ dark, setDark }) => {
           <div className={styles.logo}>
             <Link href="/">
               <a>
-                {!dark ? (
-                  <img src="/teamitlogo_blue.png" alt="" />
-                ) : (
+                {dark === false ? (
                   <img src="/teamitlogo.png" alt="" />
+                ) : (
+                  <img src="/teamitlogo_blue.png" alt="" />
                 )}
               </a>
             </Link>
