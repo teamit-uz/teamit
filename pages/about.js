@@ -32,7 +32,11 @@ const about = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {!dark ? <Snow style="snow" /> : <SnowDark style="snow" />}
-      <Layout dark={dark} setDark={setDark}>about</Layout>
+      <Layout dark={dark} setDark={setDark}>
+        about
+      </Layout>
+    </>
+  )
 }
 
 export default about
