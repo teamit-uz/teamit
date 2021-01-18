@@ -61,15 +61,15 @@ const Footer = ({ dark }) => {
           <a href="https://t.me/teamit_uz" target="_blank">
             <img src="/about7.svg" alt="" />
           </a>
-          <a href="https://t.me/teamit_uz" target="_blank">
+          <a href="https://www.facebook.com/Teamit.uz/" target="_blank">
             <img src="/about6.svg" alt="" />
           </a>
-          <a href="https://t.me/teamit_uz" target="_blank">
+          <a href="https://www.instagram.com/teamit.uz/" target="_blank">
             <img src="/about8.svg" alt="" />
           </a>
-          <a href="https://t.me/teamit_uz" target="_blank">
+          {/* <a href="https://t.me/teamit_uz" target="_blank">
             <img src="/about9.svg" alt="" />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
