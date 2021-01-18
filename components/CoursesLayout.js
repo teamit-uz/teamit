@@ -41,7 +41,7 @@ const Courses = () => {
             <img src="/courses.jpg" alt="" />
             <div className={styles.listItem_title}>SMM va Kopirayting</div>
             <div className={styles.listItem_tags}>
-              <span>Facebook</span> <span>Youtube</span>
+              <span>Facebook</span>
               <span>Instagram</span> <span>Telegram</span>
               <span>TikTok</span>
             </div>

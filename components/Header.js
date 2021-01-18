@@ -30,7 +30,6 @@ const useMediaQuery = (width) => {
 }
 
 const Header = ({ dark, setDark }) => {
-  console.log("dark2", dark)
   const isBreakpoint = useMediaQuery(768)
   const [open, setOpen] = useState(false)
   return (

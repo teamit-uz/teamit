@@ -10,10 +10,8 @@ const Layout = ({ children }) => {
     if (typeof window !== "undefined") {
       theme = localStorage.getItem("theme") || false
     }
-    console.log(theme)
     return theme !== false ? theme : false
   })
-  console.log("dark", dark)
 
   return (
     <>
