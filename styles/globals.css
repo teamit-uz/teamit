@@ -144,7 +144,10 @@ a {
 .myTheme img {
   width: 25px;
 }
-
+.mn {
+  filter: invert(10%) sepia(82%) saturate(1051%) hue-rotate(188deg)
+    brightness(95%) contrast(110%);
+}
 .moon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(99%)
     contrast(102%);
