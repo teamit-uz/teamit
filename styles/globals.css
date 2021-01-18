@@ -6,21 +6,20 @@
   --fs-lg: 1.3rem;
   --fs-xl: 2rem;
 
-  --c-blue: hsl(216, 100%, 95%);
-  --c-green: #ff7fff;
-  --c-white: hsl(216, 100%, 12%);
-  --c-black: white;
-  --c-grey: hsla(216, 100%, 6%, 70%);
-  --c-lighblue: hsl(216, 100%, 85%);
-  --c-lightgrey: hsla(216, 100%, 12%, 70%);
-  --c-dark-gray: hsl(210, 10%, 83%);
+  --c-blue: hsl(216, 100%, 22%);
+  --c-green: green;
+  --c-white: white;
+  --c-black: black;
+  --c-grey: hsl(218, 13%, 88%);
+  --c-lighblue: hsl(216, 100%, 35%);
+  --c-lightgrey: #dcdfe470;
+  --c-dark-gray: hsl(210, 10%, 23%);
+  --filter-rec: invert(100%) sepia(11%) saturate(407%) hue-rotate(191deg)
+    brightness(110%) contrast(81%);
   --mobile: 639px;
   --tablet: 1047px;
   --desktop: 1048px;
   --c-darker-gray: hsl(210, 10%, 53%);
-
-  --filter-rec: invert(15%) sepia(96%) saturate(4067%) hue-rotate(211deg)
-    brightness(13%) contrast(101%);
 }
 html,
 body {
@@ -102,6 +101,20 @@ a {
 }
 
 .dark {
+  --c-blue: hsl(216, 100%, 95%);
+  --c-green: #ff7fff;
+  --c-white: hsl(216, 100%, 12%);
+  --c-black: white;
+  --c-grey: hsla(216, 100%, 6%, 70%);
+  --c-lighblue: hsl(216, 100%, 85%);
+  --c-lightgrey: hsla(216, 100%, 12%, 70%);
+  --c-dark-gray: hsl(210, 10%, 83%);
+  --filter-rec: invert(15%) sepia(96%) saturate(4067%) hue-rotate(211deg)
+    brightness(13%) contrast(101%);
+  transition: all 1s;
+}
+
+.light {
   --c-blue: hsl(216, 100%, 22%);
   --c-green: green;
   --c-white: white;
@@ -113,20 +126,6 @@ a {
   --filter-rec: invert(100%) sepia(11%) saturate(407%) hue-rotate(191deg)
     brightness(110%) contrast(81%);
 
-  transition: all 1s;
-}
-
-.light {
-  --c-blue: hsl(216, 100%, 95%);
-  --c-green: #ff7fff;
-  --c-white: hsl(216, 100%, 12%);
-  --c-black: white;
-  --c-grey: hsla(216, 100%, 6%, 70%);
-  --c-lighblue: hsl(216, 100%, 85%);
-  --c-lightgrey: hsla(216, 100%, 12%, 70%);
-  --c-dark-gray: hsl(210, 10%, 83%);
-  --filter-rec: invert(15%) sepia(96%) saturate(4067%) hue-rotate(211deg)
-    brightness(13%) contrast(101%);
   transition: all 1s;
 }
 
@@ -144,10 +143,7 @@ a {
 .myTheme img {
   width: 25px;
 }
-.mn {
-  filter: invert(10%) sepia(82%) saturate(1051%) hue-rotate(188deg)
-    brightness(95%) contrast(110%);
-}
+
 .moon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(99%)
     contrast(102%);

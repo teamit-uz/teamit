@@ -10,12 +10,12 @@ const Layout = ({ children }) => {
     if (typeof window !== "undefined") {
       theme = localStorage.getItem("theme") || false
     }
-    return theme !== false ? theme : false
+    return theme === false ? theme : false
   })
 
   return (
     <>
-      {dark ? <Snow style="snow" /> : <SnowDark style="snow" />}
+      {dark ? <SnowDark style="snow" /> : <Snow style="snow" />}
 
       <Header dark={dark} setDark={setDark}></Header>
 

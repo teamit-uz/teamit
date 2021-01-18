@@ -16,10 +16,10 @@ const ThemeToggle = ({ dark, setDark }) => {
   }, [dark])
   return (
     <div className="myTheme" onClick={() => setDark(!dark)}>
-      {dark !== false ? (
-        <img src="/moon.svg" className="mn" alt="" />
-      ) : (
+      {dark === true ? (
         <img src="/sun.svg" className="moon" alt="" />
+      ) : (
+        <img src="/moon.svg" alt="" />
       )}
     </div>
   )

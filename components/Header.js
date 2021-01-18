@@ -39,7 +39,7 @@ const Header = ({ dark, setDark }) => {
           <div className={styles.logoSm}>
             <Link href="/">
               <a onClick={() => setOpen(!open)}>
-                {dark === false ? (
+                {dark === true ? (
                   <img src="/teamitlogo.png" alt="" />
                 ) : (
                   <img src="/teamitlogo_blue.png" alt="" />
@@ -98,7 +98,7 @@ const Header = ({ dark, setDark }) => {
           <div className={styles.logo}>
             <Link href="/">
               <a>
-                {dark === false ? (
+                {dark === true ? (
                   <img src="/teamitlogo.png" alt="" />
                 ) : (
                   <img src="/teamitlogo_blue.png" alt="" />
