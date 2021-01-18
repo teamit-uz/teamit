@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     if (typeof window !== "undefined") {
       theme = localStorage.getItem("theme") || false
     }
-    return theme === false ? theme : false
+    return theme === true ? theme : false
   })
 
   return (

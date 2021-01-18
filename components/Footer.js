@@ -5,7 +5,7 @@ const Footer = ({ dark }) => {
     <div className={styles.footer} id="contact">
       <div className={styles.footerMain}>
         <div className={styles.list}>
-          {dark === false ? (
+          {dark === true ? (
             <img src="/teamitlogo.png" alt="" />
           ) : (
             <img src="/teamitlogo_blue.png" alt="" />
