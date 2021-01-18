@@ -56,6 +56,11 @@
   z-index: 2;
   /* padding: 10px; */
 }
+@media (max-width: 850px) {
+  .list {
+    justify-content: center;
+  }
+}
 
 .copyright {
   padding: 20px 15%;
@@ -80,6 +85,7 @@
 }
 
 .list_item,
+.list_item_btn,
 .list_item a {
   display: flex;
   justify-content: center;
@@ -90,6 +96,7 @@
   font-weight: 500;
   transition: all 0.5s ease-in-out;
 }
+
 .list_item a {
   font-weight: 600;
   color: var(--c-dark-gray);

@@ -44,11 +44,13 @@ const Footer = ({ dark }) => {
           <div className={styles.list_item}>
             <a href="/#contact">Vakansiya</a>
           </div>
-          <Button
-            link="https://forms.gle/Y2MjSG9By8sxwd4WA"
-            target={"_blank"}
-            text="Kurslarga yoziling"
-          />
+          <div className={styles.list_item_btn}>
+            <Button
+              link="https://forms.gle/Y2MjSG9By8sxwd4WA"
+              target={"_blank"}
+              text="Kurslarga yoziling"
+            />
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>

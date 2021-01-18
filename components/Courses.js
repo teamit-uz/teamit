@@ -32,14 +32,14 @@ const Courses = () => {
             <div className={styles.listItem_title}>Video Montaj</div>
             <div className={styles.listItem_tags}>
               <span>After Effects</span>
-              <span>PremierPro</span>
+              <span>Premiere Pro</span>
             </div>
           </a>
         </div>
         <div className={styles.listItem}>
           <a href="/courses/1">
             <img src="/courses/course5.jpg" alt="" />
-            <div className={styles.listItem_title}>SMM va Kopirayting</div>
+            <div className={styles.listItem_title}>SMM</div>
             <div className={styles.listItem_tags}>
               <span>Facebook</span> <span>Instagram</span> <span>Telegram</span>
               <span>TikTok</span>
@@ -63,19 +63,16 @@ const Courses = () => {
             <div className={styles.listItem_title}>Ingliz tili</div>
             <div className={styles.listItem_tags}>
               <span>IELTS</span>
-              <span>Advanced</span> <span>Intermediate</span>
-              <span>Pre-Intermediate</span>
-              <span>Beginner</span>
             </div>
           </a>
         </div>
         <div className={styles.listItem}>
           <a href="/courses/2">
             <img src="/courses/course2.jpg" alt="" />
-            <div className={styles.listItem_title}>Grafik Dizayni</div>
+            <div className={styles.listItem_title}>Grafik Dizayn</div>
             <div className={styles.listItem_tags}>
               <span>Adobe Illustrator</span>
-              <span>Photoshop</span>
+              <span>Photoshop</span> <span>CorelDRAW</span>
             </div>
           </a>
         </div>
@@ -85,8 +82,8 @@ const Courses = () => {
             <div className={styles.listItem_title}>Arxitektura</div>
             <div className={styles.listItem_tags}>
               <span>AutoCAD</span>
-              <span>2D</span>
-              <span>3D</span>
+
+              <span>3DS MAX</span>
             </div>
           </a>
         </div>

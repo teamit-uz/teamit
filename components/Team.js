@@ -5,7 +5,7 @@ const Team = () => {
     <div className={`${styles.team} myPad`} id="team">
       <div className="title">Biz Teamit Jamoasi!</div>
       {/* <div className={styles.team_text}>Teamit Jamoasi </div> */}
-      <img src="/IMG_9380.JPG" alt="" />
+      <img src="/teamit.jpg" alt="" />
       <Button link="team" text="Batafsil" />
     </div>
   )

@@ -5,7 +5,7 @@ const TeamLayout = () => {
     <>
       <div className={`${styles.team} myPad`} id="team">
         <div className="title">Biz Teamit Jamoasi!</div>
-        <img src="/IMG_9380.JPG" alt="" />
+        <img src="/teamit.jpg" alt="" />
       </div>
       <div className={`${styles.list} myPad`}>
         <div className={styles.listItem}>
