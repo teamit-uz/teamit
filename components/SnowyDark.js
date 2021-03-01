@@ -68,9 +68,7 @@ const Snowy = ({ style }) => {
               enable: true,
               mode: "bounce",
             },
-            color: {
-              value: "#fff",
-            },
+            
             life: {
               count: 0,
               delay: {
@@ -108,7 +106,7 @@ const Snowy = ({ style }) => {
               gravity: {
                 acceleration: 9.81,
                 enable: true,
-                maxSpeed: 4,
+                maxSpeed: 2,
               },
               noise: {
                 delay: {
@@ -137,7 +135,7 @@ const Snowy = ({ style }) => {
                 factor: 1000,
               },
               limit: 0,
-              value: 100,
+              value: 15,
             },
             opacity: {
               random: {
@@ -168,15 +166,21 @@ const Snowy = ({ style }) => {
               path: false,
             },
             shape: {
-              options: {},
-              type: "circle",
+              image: {
+                  src: "../olcha.png", // any path or url to your image that will be used as a particle
+                  width: 600, // the pixel width of the image, you can use any value, the image will be scaled
+                  height: 600, // the pixel height of the image, you can use any value, the image will be scaled
+                  replaceColor: false // if true and the image type is SVG, it will replace all the colors with the particle color
+                  },
+              
+              type: "image",
             },
             size: {
               random: {
                 enable: true,
                 minimumValue: 1,
               },
-              value: 4,
+              value: 15,
               animation: {
                 destroy: "none",
                 enable: true,
