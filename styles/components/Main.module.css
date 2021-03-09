@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   width: 80%;
-  max-width: 400px;
+  max-width: 550px;
 }
 .mainImage img {
   margin: 0 auto;
@@ -31,7 +31,7 @@
 }
 
 .mainTitle {
-  max-width: 400px;
+  max-width: 350px;
   font-weight: bold;
   font-size: var(--fs-xl);
   color: var(--c-blue);
