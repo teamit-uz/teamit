@@ -1,5 +1,5 @@
-import styles from "../styles/components/Footer.module.css"
-import Button from "./Button"
+import styles from "../styles/components/Footer.module.css";
+import Button from "./Button";
 const Footer = ({ dark }) => {
   return (
     <div className={styles.footer} id="contact">
@@ -14,14 +14,13 @@ const Footer = ({ dark }) => {
         <div className={styles.list}>
           <div className={styles.list_title}>Aloqa</div>
           <div className={styles.list_item}>
-            <img src="/phone.svg" alt="" /> +998 90 516 10 80
+            <img src="/phone.svg" alt="" /> +998 99 550 77 99
           </div>
-          <div className={styles.list_item}>
-            <img src="/phone.svg" alt="" /> +998 93 300 86 07
-          </div>
+
           <div className={styles.list_item}>
             <img src="/location.svg" alt="" />
-            Jizzax sh. Maishiy xizmat uyi, "Zokir ota" to'yxonasi.
+            Manzil: Jizzax sh. Maishiy xizmat uyi, <br /> <br /> Mo'ljal: "Zokir
+            ota" to'yxonasi.
           </div>
         </div>
         <div className={styles.list}>
@@ -75,7 +74,7 @@ const Footer = ({ dark }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

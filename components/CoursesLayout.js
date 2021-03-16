@@ -1,15 +1,19 @@
-import styles from "../styles/components/Courses.module.css"
-import Button from "./Button"
+import styles from "../styles/components/Courses.module.css";
+import Button from "./Button";
+import Link from "next/link";
 
 const Courses = () => {
   return (
     <div className={`${styles.courses} myPad`} id="courses">
       <div className="title">Kurslarimiz</div>
       <div className={styles.list}>
+        <Card link="/courses/1" img="graphic.jpg" />
+        <Card link="/courses/2" img="roboto.jpg" />
+        <Card link="/courses/2" img="roboto.jpg" />
         <div className={styles.listItem}>
           <a href="/courses/1">
             <img src="/courses.jpg" alt="" />
-            <div className={styles.listItem_title}>Web Frontend</div>
+            <div className={styles.listItem_title}>Web 22Frontend</div>
             <div className={styles.listItem_tags}>
               <span>Javascript</span>
               <span>React</span>
@@ -103,7 +107,23 @@ const Courses = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Courses
+const Card = ({ link, img }) => {
+  return (
+    <div className={styles.listItem}>
+      <Link href={link ?? ""}>
+        <img src={`/courses/${img}`} alt="" />
+        {/* <div className={styles.listItem_title}>Web 2Frontend</div> */}
+        {/* <div className={styles.listItem_tags}>
+          <span>Javascript</span>
+          <span>React</span>
+          <span>SASS</span>
+        </div> */}
+      </Link>
+    </div>
+  );
+};
+
+export default Courses;

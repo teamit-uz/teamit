@@ -1,97 +1,40 @@
-import styles from "../styles/components/Courses.module.css"
-import Button from "./Button"
+import styles from "../styles/components/Courses.module.css";
+import Button from "./Button";
+import Link from "next/link";
 
 const Courses = () => {
   return (
     <div className={`${styles.courses} myPad`} id="courses">
       <div className="title">Kurslarimiz</div>
       <div className={styles.list}>
-        <div className={styles.listItem}>
-          <a href="/courses/1">
-            <img src="/courses/course8.jpg" alt="" />
-            <div className={styles.listItem_title}>Web Frontend</div>
-            <div className={styles.listItem_tags}>
-              <span>Javascript</span>
-              <span>React</span>
-              <span>SASS</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/1">
-            <img src="/courses/course7.jpg" alt="" />
-            <div className={styles.listItem_title}>Web Backend</div>
-            <div className={styles.listItem_tags}>
-              <span>Python</span> <span>Django</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/2">
-            <img src="/courses/course6.jpg" alt="" />
-            <div className={styles.listItem_title}>Video Montaj</div>
-            <div className={styles.listItem_tags}>
-              <span>After Effects</span>
-              <span>Premiere Pro</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/1">
-            <img src="/courses/course5.jpg" alt="" />
-            <div className={styles.listItem_title}>SMM</div>
-            <div className={styles.listItem_tags}>
-              <span>Facebook</span> <span>Instagram</span> <span>Telegram</span>
-              <span>TikTok</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/2">
-            <img src="/courses/course4.jpg" alt="" />
-            <div className={styles.listItem_title}>Office Dasturlari</div>
-            <div className={styles.listItem_tags}>
-              <span>MS Word</span>
-              <span>MS Excel</span>
-              <span>MS PowerPoint</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/1">
-            <img src="/courses/course3.jpg" alt="" />
-            <div className={styles.listItem_title}>Ingliz tili</div>
-            <div className={styles.listItem_tags}>
-              <span>IELTS</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/2">
-            <img src="/courses/course2.jpg" alt="" />
-            <div className={styles.listItem_title}>Grafik Dizayn</div>
-            <div className={styles.listItem_tags}>
-              <span>Adobe Illustrator</span>
-              <span>Photoshop</span> <span>CorelDRAW</span>
-            </div>
-          </a>
-        </div>
-        <div className={styles.listItem}>
-          <a href="/courses/2">
-            <img src="/courses/course1.jpg" alt="" />
-            <div className={styles.listItem_title}>Arxitektura</div>
-            <div className={styles.listItem_tags}>
-              <span>AutoCAD</span>
-
-              <span>3DS MAX</span>
-            </div>
-          </a>
-        </div>
+        <Card link="/courses/1" img="graphic.jpg" />
+        <Card link="/courses/2" img="roboto.jpg" />
+        <Card link="/courses/3" img="web.jpg" />
+        <Card link="/courses/4" img="foto.png" />
+        <Card link="/courses/5" img="ofis.jpg" />
+        <Card link="/courses/6" img="video.jpg" />
+        <Card link="/courses/7" img="auto.jpg" />
         <div className={styles.listItem}></div>
       </div>
       <Button link="courses" text="Batafsil" />
     </div>
-  )
-}
+  );
+};
 
-export default Courses
+const Card = ({ link, img }) => {
+  return (
+    <div className={styles.listItem}>
+      <Link href={link ?? ""}>
+        <img src={`/courses/${img}`} alt="" />
+        {/* <div className={styles.listItem_title}>Web 2Frontend</div> */}
+        {/* <div className={styles.listItem_tags}>
+          <span>Javascript</span>
+          <span>React</span>
+          <span>SASS</span>
+        </div> */}
+      </Link>
+    </div>
+  );
+};
+
+export default Courses;
