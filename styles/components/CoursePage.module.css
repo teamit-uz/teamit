@@ -21,6 +21,12 @@
   flex-direction: column;
   text-align: center;
   line-height: 100px;
+  padding: initial 10px;
+}
+
+.title{
+
+  padding: initial 10px;
 }
 
 .img {
@@ -34,7 +40,7 @@
 .img img {
   /* width: 100%; */
   z-index: 0;
-
+  width: 100%;
   max-width: 1000px;
   /* max-height: 80vh; */
   padding: 0;

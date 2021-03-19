@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-        <h3>Kursda nimalar o`rgatiladi:</h3>
+         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li> Branding (Logotip dizayn va brendbuk tayyorlash);</li>
           <li>SMM dizayn (Ijtimoiy tarmoqlar uchun post dizayn tayyorlash);</li>
@@ -54,7 +54,7 @@ const Course = () => {
           <img src="/courses/grafik/qadoq.jpg" alt="qadoq" />
           <span className={styles.imgtag}>Mahsulot qadoq dizayni</span>
         </div>
-        <h3>Qaysi grafik dasturlar o'rgatiladi:</h3>
+         <h3 className={styles.title}>Qaysi grafik dasturlar o'rgatiladi:</h3>
         <ul>
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
@@ -65,7 +65,7 @@ const Course = () => {
           <img src="/courses/grafik/dastur.jpg" alt="dastur" />
           <span className={styles.imgtag}>Grafik dasturlar</span>
         </div>
-        <h3>Qanday qulayliklar mavjud:</h3>
+         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
             Grafik dizayn xonasi kuchli parametrli kompyuterlar bilan
@@ -93,7 +93,7 @@ const Course = () => {
           <img src="/courses/grafik/dars.png" alt="dars" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-        <h3>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
         <ul>
           <li> Zamonaviy kasblardan birini o`rganadi;</li>
           <li> Yuqori saviyadagi estetik did sohibiga aylanadi;</li>

@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-        <h3>Kursda nimalar o`rgatiladi:</h3>
+        <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li> Frontend: Html, Css, Bootstrap, Javascript, React JS;</li>
           <li> Backend: Node Js, Mongo DB, Express,Git.</li>
@@ -36,7 +36,7 @@ const Course = () => {
           <img src="/courses/web/back.jpg" alt="front" />
           <span className={styles.imgtag}>Backend</span>
         </div>
-        <h3>Qanday qulayliklar mavjud:</h3>
+        <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li> O`quvchilar dars mobaynida NOUTBUK bilan ta`minlanadi;</li>
           <li> Guruhda networking muhiti yaratiladi;</li>
@@ -69,7 +69,9 @@ const Course = () => {
           <img src="/courses/web/img1.jpg" alt="dars" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-        <h3>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+        <h3 className={styles.title}>
+          Kurs o`quvchiga qanday foyda keltiradi:
+        </h3>
         <ul>
           <li> Talab yuqori bo`lgan kasblardan birini o`rganadi;</li>
           <li>

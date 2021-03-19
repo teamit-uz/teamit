@@ -2,7 +2,7 @@ import styles from "../styles/components/Header.module.css";
 import Link from "next/link";
 import { useState, useCallback, useEffect, useContext } from "react";
 import ThemeToggle from "./ThemeToggle";
-import { ThemeContext } from "./Layout";
+import { ThemeContext } from "./ThemeProvider";
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);

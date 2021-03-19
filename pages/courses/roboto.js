@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-        <h3>Kursda nimalar o`rgatiladi:</h3>
+         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li>
             {" "}
@@ -36,7 +36,7 @@ const Course = () => {
           <img src="/courses/roboto/img1.jpg" alt="front" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-        <h3>Qanday qulayliklar mavjud:</h3>
+         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
             {" "}
@@ -65,7 +65,7 @@ const Course = () => {
           <img src="/courses/roboto/img2.jpg" alt="dars" />
           <span className={styles.imgtag}>Mashg`ulot xona</span>
         </div>
-        <h3>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
         <ul>
           <li> Elektr sohasi haqida kerakli tushunchaga ega bo`ladi;</li>
           <li>Kompyuterdan samarali foydalanishni o'rganadi;</li>

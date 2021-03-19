@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-        <h3>Kursda nimalar o`rgatiladi:</h3>
+         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li> Fotografiya sohasiga oid barcha yo'nalishlar;</li>
           <li>Wedding fotografiya;</li>
@@ -39,7 +39,7 @@ const Course = () => {
           <span className={styles.imgtag}></span>
         </div>
 
-        <h3>Qanday qulayliklar mavjud:</h3>
+         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
             O'quvchilar darsda kompyuter, internet va kerakli jihozlar bilan
@@ -53,7 +53,7 @@ const Course = () => {
           <span className={styles.imgtag}></span>
         </div>
 
-        <h3>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
         <ul>
           <li> Fotografiya sohasi haqida kerakli tushunchaga ega bo'ladi;</li>
           <li> Fotografiya sohasidan pul ishlashni o'rganadi;</li>

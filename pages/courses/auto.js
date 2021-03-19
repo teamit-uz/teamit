@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-        <h3>Kursda nimalar o`rgatiladi:</h3>
+        <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li>AUTOCAD dasturidan foydalanish;</li>
           <li>Bino loyihasi chizish(Planirovka);</li>
@@ -43,7 +43,7 @@ const Course = () => {
           <span className={styles.imgtag}>Uyning 2D chizmasi</span>
         </div>
 
-        <h3>Qanday qulayliklar mavjud:</h3>
+        <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
             Grafik dizayn xonasi kuchli parametrli kompyuterlar bilan
@@ -66,7 +66,7 @@ const Course = () => {
           <img src="/courses/auto/img3.jpg" alt="dars" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-        <h3>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+        <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
         <ul>
           <li> Zamonaviy kasblardan birini o`rganadi;</li>
           <li>

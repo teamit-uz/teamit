@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-        <h3>Kursda nimalar o`rgatiladi:</h3>
+         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li>
             Microsof Word dasturidan foydalanish va unda Ma`lumotnoma, Shartnoma
@@ -45,7 +45,7 @@ const Course = () => {
           <span className={styles.imgtag}>O'rgatiladigan dasturlar</span>
         </div>
 
-        <h3>Qanday qulayliklar mavjud:</h3>
+         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
             O`quvchilar darsda kompyuter, internet va tarqatma materiallar bilan
@@ -62,7 +62,7 @@ const Course = () => {
           <img src="/courses/ofis/dars.jpg" alt="dars" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-        <h3>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
         <ul>
           <li> kompyuter savodxonligi shakllanadi;</li>
           <li>

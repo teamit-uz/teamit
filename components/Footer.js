@@ -1,6 +1,6 @@
 import styles from "../styles/components/Footer.module.css";
 import Button from "./Button";
-import { ThemeContext } from "./Layout";
+import { ThemeContext } from "./ThemeProvider";
 
 import { useContext } from "react";
 
