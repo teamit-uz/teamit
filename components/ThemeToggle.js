@@ -1,28 +1,18 @@
-import { useState, useEffect } from "react"
-const ThemeToggle = ({ dark, setDark }) => {
-  const toggler = async () => {
-    if (dark !== false) {
-      window.document.body.classList.add("dark")
-      window.document.body.classList.remove("light")
-      localStorage.setItem("theme", dark)
-    } else {
-      window.document.body.classList.add("light")
-      window.document.body.classList.remove("dark")
-      localStorage.setItem("theme", dark)
-    }
-  }
-  useEffect(() => {
-    toggler()
-  }, [dark])
+import { useState, useEffect, useContext } from "react";
+import { ThemeContext } from "./Layout";
+
+const ThemeToggle = () => {
+  const { dark, toggler } = useContext(ThemeContext);
+
   return (
-    <div className="myTheme" onClick={() => setDark(!dark)}>
-      {dark === true ? (
+    <div className="myTheme" onClick={() => toggler()}>
+      {/* {dark === true ? (
         <img src="/sun.svg" className="moon" alt="" />
       ) : (
         <img src="/moon.svg" alt="" />
-      )}
+      )} */}
     </div>
-  )
-}
+  );
+};
 
-export default ThemeToggle
+export default ThemeToggle;

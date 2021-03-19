@@ -1,6 +1,12 @@
 import styles from "../styles/components/Footer.module.css";
 import Button from "./Button";
-const Footer = ({ dark }) => {
+import { ThemeContext } from "./Layout";
+
+import { useContext } from "react";
+
+const Footer = () => {
+  const { dark } = useContext(ThemeContext);
+
   return (
     <div className={styles.footer} id="contact">
       <div className={styles.footerMain}>

@@ -10,9 +10,9 @@ const Course = () => {
   return (
     <Layout>
       <div className={styles.slug}>
+        <CoursesPage />
         {/* <img src="/construct.jpg" alt="" /> */}
       </div>
-      <CoursesPage />
     </Layout>
   );
 };

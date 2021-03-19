@@ -1,28 +1,39 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import Snow from "./Snowy"
-import SnowDark from "./SnowyDark"
+import Header from "./Header";
+import Footer from "./Footer";
+import Snow from "./Snowy";
+import SnowDark from "./SnowyDark";
 
-import { useState, useEffect } from "react"
+export const ThemeContext = React.createContext();
+
+import React, { useState, useEffect } from "react";
+
 const Layout = ({ children }) => {
-  const [dark, setDark] = useState(() => {
-    let theme
-    if (typeof window !== "undefined") {
-      theme = localStorage.getItem("theme") || false
+  const [dark, setDark] = useState(false);
+  const toggler = () => {
+    setDark(!dark);
+    if (dark === true) {
+      window.document.body.classList.add("dark");
+      window.document.body.classList.remove("light");
+    } else {
+      window.document.body.classList.add("light");
+      window.document.body.classList.remove("dark");
     }
-    return theme === true ? theme : false
-  })
+  };
+
+  // useEffect(() => {
+  //   toggler();
+  // }, []);
 
   return (
-    <>
-      {dark ? <SnowDark style="snow" /> : <Snow style="snow" />}
+    <ThemeContext.Provider value={{ dark, toggler }}>
+      {dark === true ? <SnowDark style="snow" /> : <Snow style="snow" />}
 
-      <Header dark={dark} setDark={setDark}></Header>
+      <Header></Header>
 
       <div className="layoutMain">{children}</div>
-      <Footer dark={dark}></Footer>
-    </>
-  )
-}
+      <Footer></Footer>
+    </ThemeContext.Provider>
+  );
+};
 
-export default Layout
+export default Layout;
