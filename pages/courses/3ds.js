@@ -10,12 +10,12 @@ const Course = () => {
   return (
     <Layout>
       <div className={`${styles.container} myPad`}>
-        <div className={styles.mainTitle}>AUTOCAD kursi</div>
+        <div className={styles.mainTitle}>3DS Max kursi</div>
         <div>
-          <span className={styles.bold}>Davomiyligi: 2 oy </span>
+          <span className={styles.bold}>Davomiyligi: 4 oy </span>
         </div>
         <div>
-          <span className={styles.bold}>Haftada 3 kun, 2 soatdan </span>
+          <span className={styles.bold}>Haftada 2 kun, 3 soatdan </span>
         </div>
         <div>
           <span className={styles.bold}>
@@ -25,29 +25,26 @@ const Course = () => {
 
         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
-          <li>AUTOCAD dasturidan foydalanish;</li>
-          <li>Bino loyihasi chizish(Planirovka);</li>
-          <li>Binoni fasad qismini chizish;</li>
-          <li>Binoni mebelashtirish;</li>
-          <li>Binoni 3D ko'rinishini yaratish;</li>
-          <li>Binoni qirqimini olish;</li>
-          <li>Qurilishga ketadigan mahsulotlar hisobi (Otdelka).</li>
+          <li>Interyer modellarini yaratish;</li>
+          <li>Eksteryer modellarini yaratish;</li>
+          <li>Landshaft dizaynini yaratish;</li>
+          <li>Tayyor 3d modellar bilan ishlash;</li>
+          <li>Yorug'lik va nurlar bilan ishlash;</li>
+          <li>3d modellar materiallari bilan ishlash;</li>
+          <li>Qo'shimcha pluginlar bilan ishlash;</li>
+          <li>Yaratgan modellarni vizualizatsiya qilish;</li>
+          <li>Referencelardan foydalanish.</li>
         </ul>
 
         <div className={styles.img}>
-          <img src="/courses/auto/img1.jpg" alt="front" />
-          <span className={styles.imgtag}>Binoni fasad qismi chizmasi</span>
-        </div>
-        <div className={styles.img}>
-          <img src="/courses/auto/img2.jpg" alt="front" />
-          <span className={styles.imgtag}>Uyning 2D chizmasi</span>
+          <img src="/courses/3ds/img1.jpg" alt="front" />
+          <span className={styles.imgtag}>Eksteryer</span>
         </div>
 
         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
-            Grafik dizayn xonasi kuchli parametrli kompyuterlar bilan
-            jihozlangan;
+            3DS MAX xonasi kuchli parametrli kompyuterlar bilan jihozlangan;
           </li>
           <li>30% nazariy, 70% amaliy; </li>
           <li> Guruhda networking muhiti yaratiladi; </li>
@@ -58,21 +55,21 @@ const Course = () => {
           </li>
         </ul>
         <div className={styles.img}>
-          <img src="/courses/auto/mentor.jpg" alt="mentor" />
+          <img src="/courses/3ds/mentor.jpg" alt="mentor" />
           <span className={styles.imgtag}></span>
         </div>
         <div className={styles.img}>
-          <img src="/courses/auto/img3.jpg" alt="dars" />
-          <span className={styles.imgtag}>Dars jarayoni</span>
+          <img src="/courses/3ds/img2.png" alt="dars" />
+          <span className={styles.imgtag}>Mashg'ulot xonasi</span>
         </div>
-        <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+        <h3 className={styles.title}>
+          Kurs o`quvchiga qanday foyda keltiradi:
+        </h3>
         <ul>
-          <li> Zamonaviy kasblardan birini o`rganadi;</li>
+          <li> Zamonaviy kasblardan birini o`rganadi</li>
           <li>
-            O'quvchi arxitektura buyicha boshlang'ich tushunchaga ega bo'ladi;
+           O'quvchilar arxitektura asoslaridan xabardor bo'ladi;
           </li>
-          <li>O'rta va kichik loyihalarni chiza oladi;</li>
-          <li>Qurilish materiallarini o'lchamlarini o'rganadi;</li>
           <li> Kreativ fikrlash va ijodkorlik qobiliyatlari shakllanadi.</li>
         </ul>
 
@@ -83,7 +80,7 @@ const Course = () => {
           </h4>
         </div>
         <div>
-          <span className={styles.bold}>Narxi: oyiga 250 ming so`m</span>
+          <span className={styles.bold}>Narxi: oyiga 600 ming so`m</span>
         </div>
       </div>
     </Layout>

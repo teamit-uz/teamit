@@ -23,7 +23,7 @@ const Course = () => {
           </span>
         </div>
 
-         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
+        <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li> Video montaj asoslari;</li>
           <li>Dasturlar bilan tanishish;</li>
@@ -33,7 +33,7 @@ const Course = () => {
           <li>Mahsulotni render qilish.</li>
         </ul>
 
-         <h3 className={styles.title}>Qaysi grafik dasturlar o'rgatiladi:</h3>
+        <h3 className={styles.title}>Qaysi grafik dasturlar o'rgatiladi:</h3>
         <ul>
           <li>Adobe Premiere Pro</li>
           <li>Adobe After Effects</li>
@@ -43,8 +43,12 @@ const Course = () => {
           <img src="/courses/video/img1.jpg" alt="dastur" />
           <span className={styles.imgtag}>O'rgatiladigan dasturlar</span>
         </div>
-         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
+        <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
+          <li>
+            Darsni professional video montaj ustasi, Creative Studio asoschisi
+            o'tadi;
+          </li>
           <li>
             Video xonasi kuchli parametrli kompyuterlar bilan jihozlangan;
           </li>
@@ -60,14 +64,16 @@ const Course = () => {
 
         <div className={styles.img}>
           <img src="/courses/video/xona.png" alt="dars" />
-          <span className={styles.imgtag}>Mashg`ulot xona</span>
+          <span className={styles.imgtag}>Mashg'ulot xonasi</span>
         </div>
         <div className={styles.img}>
           <img src="/courses/video/mentor.jpg" alt="mentor" />
           <span className={styles.imgtag}></span>
         </div>
 
-         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+        <h3 className={styles.title}>
+          Kurs o`quvchiga qanday foyda keltiradi:
+        </h3>
         <ul>
           <li> Zamonaviy kasblardan birini o`rganadi;</li>
           <li> O'quvchilar video montaj asoslaridan xabardor bo'ladi;</li>

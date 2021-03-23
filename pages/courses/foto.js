@@ -12,7 +12,7 @@ const Course = () => {
       <div className={`${styles.container} myPad`}>
         <div className={styles.mainTitle}>Professional fotografiya</div>
         <div>
-          <span className={styles.bold}>Davomiyligi:2 oy </span>
+          <span className={styles.bold}>Davomiyligi: 2 oy </span>
         </div>
         <div>
           <span className={styles.bold}>Haftada 3 kun, 1 soatdan </span>

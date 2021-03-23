@@ -12,7 +12,7 @@ const Course = () => {
       <div className={`${styles.container} myPad`}>
         <div className={styles.mainTitle}>Ofis dasturlari kursi</div>
         <div>
-          <span className={styles.bold}>Davomiyligi:2 oy </span>
+          <span className={styles.bold}>Davomiyligi: 2 oy </span>
         </div>
         <div>
           <span className={styles.bold}>Haftada 3 kun, 2 soatdan </span>
@@ -23,12 +23,12 @@ const Course = () => {
           </span>
         </div>
 
-         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
+        <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li>
-            Microsof Word dasturidan foydalanish va unda Ma`lumotnoma, Shartnoma
-            blankalari, Firma blankasi, Talabnoma, Tavsifnoma, Bayonnoma, Buyruq
-            va boshqa hujjatlarni tayyorlash ;
+            Microsoft Word dasturidan foydalanish va unda Ma`lumotnoma,
+            Shartnoma blankalari, Firma blankasi, Talabnoma, Tavsifnoma,
+            Bayonnoma, Buyruq va boshqa hujjatlarni tayyorlash;
           </li>
           <li>
             Microsoft Excel dasturidan foydalanish va unda har xil jadvallar
@@ -45,15 +45,15 @@ const Course = () => {
           <span className={styles.imgtag}>O'rgatiladigan dasturlar</span>
         </div>
 
-         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
+        <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
-            O`quvchilar darsda kompyuter, internet va tarqatma materiallar bilan
+            O’quvchilar darsda kompyuter, internet va tarqatma materiallar bilan
             ta`minlanadi;
           </li>
-          <li> Dars nazariya va amaliyot bilan birgalikda olib boriladi; </li>
+          <li>Dars nazariya va amaliyot bilan birgalikda olib boriladi; </li>
           <li>
-            O`quvchi darsdan tashqari vaqtda ham coworking zonamizdan
+            O`quvchi darsdan tashqari vaqtda ham Coworking zonamizdan
             foydalanishi mumkin.
           </li>
         </ul>
@@ -62,20 +62,19 @@ const Course = () => {
           <img src="/courses/ofis/dars.jpg" alt="dars" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+        <h3 className={styles.title}>
+          Kurs o`quvchiga qanday foyda keltiradi:
+        </h3>
         <ul>
-          <li> kompyuter savodxonligi shakllanadi;</li>
+          <li> Kompyuter savodxonligi shakllanadi;;</li>
           <li>
-            davlat va xususiy tashkilotlarda eng ko`p qo`llaniladigan
-            dasturlarni o`rganadi;
+           Davlat va xususiy tashkilotlarda eng ko`p qo`llaniladigan dasturlarni o`rganadi;
           </li>
           <li>
-            davlat va xususiy tashkilotlarda ishlash va jamoa bilan muomala
-            madaniyati rivojlanadi;
+           Davlat va xususiy tashkilotlarda ishlash va jamoa bilan muomala madaniyati rivojlanadi;
           </li>
           <li>
-            davlat tilida ish yuritish, ya`ni hujjatlar bilan ishlash ko`nikmasi
-            shakllanadi.
+         Davlat tilida ish yuritish, ya`ni hujjatlar bilan ishlash ko`nikmasi shakllanadi.
           </li>
         </ul>
         <div className={styles.img}>

@@ -12,7 +12,7 @@ const Course = () => {
       <div className={`${styles.container} myPad`}>
         <div className={styles.mainTitle}>Grafik dizayn kursi</div>
         <div>
-          <span className={styles.bold}>Davomiyligi:6 oy </span>
+          <span className={styles.bold}>Davomiyligi: 6 oy </span>
         </div>
         <div>
           <span className={styles.bold}>Haftada 3 kun, 2 soatdan </span>
@@ -83,7 +83,7 @@ const Course = () => {
 
         <div className={styles.img}>
           <img src="/courses/grafik/xona.png" alt="dars" />
-          <span className={styles.imgtag}>Mashg`ulot xona</span>
+          <span className={styles.imgtag}>Mashg`ulot xonasi</span>
         </div>
         <div className={styles.img}>
           <img src="/courses/grafik/mentor.jpg" alt="mentor" />

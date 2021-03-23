@@ -12,7 +12,7 @@ const Course = () => {
       <div className={`${styles.container} myPad`}>
         <div className={styles.mainTitle}>Robototexnika kursi</div>
         <div>
-          <span className={styles.bold}>Davomiyligi:6 oy </span>
+          <span className={styles.bold}>Davomiyligi: 6 oy </span>
         </div>
         <div>
           <span className={styles.bold}>Haftada 3 kun, 2 soatdan </span>
@@ -23,37 +23,35 @@ const Course = () => {
           </span>
         </div>
 
-         <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
+        <h3 className={styles.title}>Kursda nimalar o`rgatiladi:</h3>
         <ul>
           <li>
-            {" "}
             C++ dasturlash tili (basic), Arduino va Raspberry Pi platformalari;
           </li>
-          <li> elektronika, mexanika va sxemotexnika sohalari.</li>
+          <li> Elektronika, mexanika va sxemotexnika asoslari.</li>
         </ul>
 
         <div className={styles.img}>
           <img src="/courses/roboto/img1.jpg" alt="front" />
           <span className={styles.imgtag}>Dars jarayoni</span>
         </div>
-         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
+        <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
         <ul>
           <li>
-            {" "}
             O’quvchilar darsda kompyuter, internet va kerakli jihozlar bilan
             ta’minlanadi;
           </li>
           <li> 20 % nazariya, 80% amalyot;</li>
           <li>
-            o`quvchilar darsdan tashqari vaqtlarda ham markazga kelib
+            O`quvchilar darsdan tashqari vaqtlarda ham markazga kelib
             o`zlarining ustida ishlashlari mumkin;
           </li>
           <li>
-            boshqa o’quv markazlari bilan do’stona musobaqa va ko’rgazmalarda
-            ishtirok etish imkoni beriladi;
+            Boshqa o’quv markazlari bilan do’stona musobaqa va ko’rgazmalar
+            tashkil etiladi;
           </li>
           <li>
-            musobaqalarda o`rin olgan o`quvchilarimiz esdalik sovg’alar bilan
+            Musobaqalarda o`rin olgan o`quvchilarimiz esdalik sovg’alar bilan
             taqdirlanadi.
           </li>
         </ul>
@@ -63,15 +61,17 @@ const Course = () => {
         </div>
         <div className={styles.img}>
           <img src="/courses/roboto/img2.jpg" alt="dars" />
-          <span className={styles.imgtag}>Mashg`ulot xona</span>
+          <span className={styles.imgtag}>Mashg`ulot xonasi</span>
         </div>
-         <h3 className={styles.title}>Kurs o`quvchiga qanday foyda keltiradi:</h3>
+        <h3 className={styles.title}>
+          Kurs o`quvchiga qanday foyda keltiradi:
+        </h3>
         <ul>
           <li> Elektr sohasi haqida kerakli tushunchaga ega bo`ladi;</li>
           <li>Kompyuterdan samarali foydalanishni o'rganadi;</li>
           <li>
-            o’quvchining mantiqiy fikrlashi rivojlanadi va dunyoqarashi
-            kengayadi.{" "}
+            O’quvchining mantiqiy fikrlashi rivojlanadi va dunyoqarashi
+            kengayadi.
           </li>
         </ul>
         <div>

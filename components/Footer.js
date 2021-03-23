@@ -20,7 +20,7 @@ const Footer = () => {
         <div className={styles.list}>
           <div className={styles.list_title}>Aloqa</div>
           <div className={styles.list_item}>
-            <img src="/phone.svg" alt="" /> +998 99 550 77 99
+            <img src="/phone.svg" alt="" /> 99 550 77 99
           </div>
 
           <div className={styles.list_item}>
