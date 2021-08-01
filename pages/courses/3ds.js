@@ -37,8 +37,12 @@ const Course = () => {
         </ul>
 
         <div className={styles.img}>
-          <img src="/courses/3ds/img1.jpg" alt="front" />
-          <span className={styles.imgtag}>Eksteryer</span>
+          <img src="/courses/3ds/autopic1.jpg" alt="front" />
+          <span className={styles.imgtag}> AutoCAD & 3DS MAX & LUMION 11 Pro</span>
+        </div>
+        <div className={styles.img}>
+          <img src="/courses/3ds/autopic2.jpg" alt="front" />
+          <span className={styles.imgtag}> AutoCAD & 3DS MAX & LUMION 11 Pro</span>
         </div>
 
         <h3 className={styles.title}>Qanday qulayliklar mavjud:</h3>
@@ -55,7 +59,7 @@ const Course = () => {
           </li>
         </ul>
         <div className={styles.img}>
-          <img src="/courses/3ds/mentor.jpg" alt="mentor" />
+          <img src="/courses/auto/mentor.jpg" alt="mentor" />
           <span className={styles.imgtag}></span>
         </div>
         <div className={styles.img}>
@@ -80,7 +84,7 @@ const Course = () => {
           </h4>
         </div>
         <div>
-          <span className={styles.bold}>Narxi: oyiga 600 ming so`m</span>
+          <span className={styles.bold}>Narxi: oyiga 400 ming so`m</span>
         </div>
       </div>
     </Layout>

@@ -169,7 +169,7 @@ const Snowy = ({ style }) => {
             },
             shape: {
              image: {
-                  src: "../olcha.png", // any path or url to your image that will be used as a particle
+                  // src: "../olcha.png", // any path or url to your image that will be used as a particle
                   width: 600, // the pixel width of the image, you can use any value, the image will be scaled
                   height: 600, // the pixel height of the image, you can use any value, the image will be scaled
                   replaceColor: false // if true and the image type is SVG, it will replace all the colors with the particle color

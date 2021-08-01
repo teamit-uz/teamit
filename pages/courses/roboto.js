@@ -81,7 +81,7 @@ const Course = () => {
           </h4>
         </div>
         <div>
-          <span className={styles.bold}>Narxi: oyiga 200 ming so`m</span>
+          <span className={styles.bold}>Narxi: oyiga 250 ming so`m</span>
         </div>
       </div>
     </Layout>
