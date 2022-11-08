@@ -93,9 +93,7 @@ const Course = () => {
             sertifikat beriladi.
           </h4>
         </div>
-        <div>
-          <span className={styles.bold}>Narxi: oyiga 300 ming so`m</span>
-        </div>
+       
       </div>
     </Layout>
   );
