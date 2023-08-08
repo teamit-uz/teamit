@@ -12,9 +12,7 @@ const Courses = () => {
         <Card link="/courses/grafik" img="graphic.jpg" />
         <Card link="/courses/roboto" img="roboto.jpg" />
         <Card link="/courses/web" img="web.jpg" />
-        <Card link="/courses/foto" img="foto.png" />
         <Card link="/courses/ofis" img="ofis.jpg" />
-        <Card link="/courses/video" img="video.jpg" />
         <div className={styles.listItem}></div>
       </div>
       <Button link="courses" text="Batafsil" />
