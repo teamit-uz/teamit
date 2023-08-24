@@ -30,7 +30,7 @@ const About = () => {
           <span>Amaliyot yoki turli kompaniyalarda ish topishga ko'mak</span>
         </div>
       </div>
-      <Button link="/#about" text="Batafsil" />
+      {/* <Button link="/#about" text="Batafsil" /> */}
     </div>
   )
 }

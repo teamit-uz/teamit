@@ -7,7 +7,7 @@ const Courses = () => {
     <div className={`${styles.courses} myPad`} id="courses">
       <div className="title">Kurslarimiz</div>
       <div className={styles.list}>
-         <Card link="/courses/grafik" img="graphic.jpg" />
+        <Card link="/courses/grafik" img="graphic.jpg" />
         <Card link="/courses/roboto" img="roboto.jpg" />
         <Card link="/courses/web" img="web.jpg" />
         <Card link="/courses/ofis" img="ofis.jpg" />

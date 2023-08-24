@@ -5,7 +5,7 @@
   min-height: 100vh;
   width: 100vw;
   max-width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   z-index: 1;
 }
 .mainImage {
@@ -41,4 +41,12 @@
   flex-direction: column;
   text-align: center;
   gap: 20px;
+}
+
+
+@media screen and (max-width: 668px) {
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
