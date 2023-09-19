@@ -7,6 +7,7 @@
   max-width: 100%;
   /* flex-wrap: wrap; */
   z-index: 1;
+  margin-top: 50px;
 }
 .mainImage {
   display: flex;
@@ -44,7 +45,7 @@
 }
 
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 1000px) {
   .main{
     display: flex;
     flex-wrap: wrap;
