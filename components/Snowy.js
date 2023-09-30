@@ -1,4 +1,4 @@
-import Particles from "react-tsparticles"
+import Particles from "react-particles"
 const Snowy = ({ style }) => {
   return (
     <div>
